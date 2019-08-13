@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color = "medium"> 
+      <ion-buttons slot="start">
+          <ion-menu-button menu = "first"></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Senson Control</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <ion-card *ngIf= "count.length === 0">
+        <ion-card-content><h3>Count will displayed once the button is pushed atleast once.</h3></ion-card-content>
+      </ion-card>
+      <ion-card *ngIf= "count.length !== 0">
+      <!-- <img src="../../assets/led.jpg" /> -->
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Push Button has been pushed</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="ion-text-center">
+        <ion-card-content><h1 class="count ion-text-center">{{ count[0] | number }} </h1>
+        </ion-card-content>
+        <ion-card-title class="ion-text-center"> times.</ion-card-title>
+      </ion-card-content>
+    </ion-card>
+    </ion-row>
+  </ion-grid>
+  </ion-content> 
+  

@@ -1,0 +1,36 @@
+<ion-header >
+  <ion-toolbar color = "medium">
+    <ion-title>Sensor Control</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+    <ion-grid style="height: 100%">
+      <ion-row justify-content-center align-items-center style="height: 100%">
+        <ion-card style="width: 400px; height: 400px" >
+           <ion-card-header color = "medium">
+          <ion-card-title class="ion-text-center">Login</ion-card-title>
+            </ion-card-header>
+          <ion-card-content>
+
+              <ion-item style="margin-top: 30px; margin-bottom: 20px;">
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input ></ion-input>
+              </ion-item>
+              
+              
+              <ion-item style="margin-top: 30px; margin-bottom: 20px;">
+                  <ion-label position="floating">Password</ion-label>
+                  <ion-input ></ion-input>
+              </ion-item>
+    
+              <ion-button text-center style="margin-top: 20px; margin-bottom: 20px;" color = "medium" (click) = "onLogin()" padding >Login</ion-button>
+              
+            </ion-card-content>
+            
+      </ion-card>
+      </ion-row>
+    </ion-grid>
+    </ion-content> 

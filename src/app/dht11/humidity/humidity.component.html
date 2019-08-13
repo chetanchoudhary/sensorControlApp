@@ -1,0 +1,21 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>DHT-11</ion-card-subtitle>
+    <ion-card-title>Humidity</ion-card-title>
+  </ion-card-header>
+  <ion-card-content><h1 class = "ion-text-center" *ngIf= "dht11Data.length === 0">Please turn ON the Sensor for Humidity Readings.</h1></ion-card-content>
+  <ion-card-content><h1 class = "humidity ion-text-center" *ngIf= "dht11Data.length !== 0">{{ dht11Data[0].humidity | number }} %</h1>
+    
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>DHT-11</ion-card-subtitle>
+    <ion-card-title>Temperature</ion-card-title>
+  </ion-card-header>
+  
+  <ion-card-content><h1 class = "ion-text-center" *ngIf= "dht11Data.length === 0">Please turn ON the Sensor for Temperature Readings.</h1></ion-card-content>
+  <ion-card-content><h1 class = "humidity ion-text-center" *ngIf= "dht11Data.length !== 0">{{ dht11Data[0].temperature | number }} &deg;C</h1>
+    
+  </ion-card-content>
+</ion-card>

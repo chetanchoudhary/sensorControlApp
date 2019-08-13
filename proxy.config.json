@@ -1,0 +1,8 @@
+{
+    "/Thingworx/*": {
+      "target": "https://pp-1907241102nj.devportal.ptc.io",
+      "secure": true,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }

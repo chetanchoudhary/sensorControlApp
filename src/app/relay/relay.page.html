@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color = "medium">
+      <ion-buttons slot="start">
+          <ion-menu-button menu = "first"></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Sensor Control</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+ <ion-content>
+<ion-grid style="height: 100%">
+  <ion-row justify-content-center align-items-center style="height: 100%">
+    <ion-card>
+    <!-- <img src="../../assets/led.jpg" /> -->
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Relay Switch</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      <ion-toggle [(ngModel)]='switch' (ionChange) = 'onOff()'></ion-toggle>
+    </ion-card-content>
+  </ion-card>
+  </ion-row>
+</ion-grid>
+</ion-content> 

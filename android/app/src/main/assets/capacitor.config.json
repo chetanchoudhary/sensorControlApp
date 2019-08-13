@@ -1,0 +1,7 @@
+{
+  "appId": "com.sensorcontrol.www",
+  "appName": "SensorControl",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
